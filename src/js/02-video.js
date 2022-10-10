@@ -13,5 +13,5 @@ const timeVideo = JSON.parse(localStorage.getItem('videoplayer-current-time'));
   if (timeVideo) {
     player.setCurrentTime(timeVideo.seconds);
   }
-console.log(timeVideo.value);
+console.log(timeVideo);
 
