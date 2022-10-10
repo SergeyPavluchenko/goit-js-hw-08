@@ -20,7 +20,7 @@ const onFormInput = event => {
 }
 
 const throttleOnFormInput = throttle(onFormInput, 500)
-formRef.addEventListener('input', onFormInput);
+formRef.addEventListener('input', throttleOnFormInput);
 
 function initPage() {
     const saveData = load(LOCALE_STORAGE_KEY);
