@@ -24,7 +24,7 @@ formRef.addEventListener('input', throttleOnFormInput);
 
 function initPage() {
     const saveData = load(LOCALE_STORAGE_KEY);
-    console.log(saveData);
+    // console.log(saveData);
     if (!saveData) {
         return;
     }
@@ -38,7 +38,7 @@ const hendleSubmit = event => {
     const {
         elements: {email, message},
     } = event.currentTarget;
-    console.log({ email: email.value, message: message.value });
+    // console.log({ email: email.value, message: message.value });
     event.currentTarget.reset();
     remove(LOCALE_STORAGE_KEY);
 };
